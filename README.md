@@ -143,8 +143,6 @@ python -m unittest discover -s tests   # 74 项全部通过
 
 ## 竞赛材料索引
 
-- `docs/AIC_TECHNICAL_REPORT.md` — 技术报告草稿
-- `docs/AIC_VIDEO_SCRIPT.md` — 演示视频脚本（3—5 分钟）
 - `docs/AIC_PPT_OUTLINE.md` — 答辩 PPT 大纲
 - `docs/AIC_RESOURCE_MANIFEST.csv` — 开源及第三方资源使用清单
 - `docs/FEATURE_MATRIX.md` — 功能基线
