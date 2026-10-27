@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opensourceguard"
+version = "0.6.0"
+description = "Evidence-first autonomous maintainer for open-source issues"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+authors = [{name = "OpenSourceGuard contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+modelscope = ["modelscope-hub>=0.0.9"]
+
+[tool.setuptools]
+packages = ["opensourceguard"]

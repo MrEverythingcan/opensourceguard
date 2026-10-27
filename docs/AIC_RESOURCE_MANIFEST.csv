@@ -1,0 +1,13 @@
+资源名称及类型,版本/来源,许可证/授权类型,使用方式,关键许可义务或限制,自主开发边界,合规状态及开放方式
+Python 3.10+（语言运行时与标准库）,python.org（实测 Python 3.12）,PSF License 2.0,HTTP 服务、SQLite、unittest、临时目录等后端全部基于标准库实现,保留版权与许可声明,全部业务代码自主编写,合规；随代码仓库公开
+DeepSeek 开放平台（大模型服务，可选组件）,api.deepseek.com,商业 API 服务条款,Agent 对话、深度解读、README 改写、补丁草稿生成,按服务条款调用；密钥不随作品分发、不写入代码与材料,OpenAI 兼容协议适配、提示词组装、流式 NDJSON 解析、本地规则兜底均为自研,合规；未配置密钥时自动降级本地规则摘要
+OSV.dev（漏洞数据库与 API）,api.osv.dev,开放数据服务（数据源自 GitHub Advisory Database 等公开库）,供应链扫描批量查询（querybatch）依赖已知漏洞,引用注明来源；仅作风险提示,漏洞匹配、高危统计与详情展示逻辑自主实现,合规
+OSPS Baseline（OpenSSF 开源项目安全基线）,baseline.openssf.org,公开标准文档（按官方条款引用）,供应链安全评分控制域对照,引用注明出处,打分实现与控制域映射自主编写,合规
+CycloneDX（SBOM 标准）,v1.5（cyclonedx.org）,规范文本 Apache-2.0,生成符合规范的 SBOM（JSON）供下载,遵循规范结构输出,SBOM 生成器零依赖自主实现,合规
+GitHub REST API（代码托管与协作）,GitHub 官方接口,按 GitHub 服务条款与仓库许可证使用,远程解读、热门榜单、发布预览与同步、Issue 录入,遵守速率限制；凭据仅存浏览器 sessionStorage、不落盘,接口调用层与鉴权流程自主实现,合规；不含凭据
+ModelScope 开放接口,ModelScope 官方接口,按 ModelScope 服务条款使用,远程解读、热门榜单、发布预览与同步,遵守速率限制；凭据仅存浏览器 sessionStorage,平台适配与确认式发布流程自主实现,合规；不含凭据
+Gitee 开放接口,Gitee 官方接口,按 Gitee 服务条款使用,远程解读、热门榜单,遵守速率限制,接口调用层自主实现,合规；不含凭据
+Flask 0.12.2 等（演示数据中的声明式依赖）,PyPI,Flask 为 BSD-3-Clause,demo-vuln 演示目录的依赖声明，用于漏洞扫描演示，不实际安装运行,演示数据集自主构造；不再分发改上游代码,测试数据与预期结果自主构造,合规
+Laya（开源 System-1 决策模型，可选组件）,laya 0.4.11（PyPI）+ convaiinnovations/laya 权重（Hugging Face）,Apache-2.0（开放权重）,模糊意图快速路由（typed-decision）；确定性关键词规则优先、置信度门控、缺失自动回退,遵循 Apache-2.0 条款；权重缓存于本地、不随作品分发,路由编排、关键词规则、置信度门控与安全回退自研；模型仅作补充决策,合规；已实测（CPU 本地推理）
+OpenViking（Agent 上下文数据库服务，可选组件）,OpenViking Service（api.vikingdb.cn-beijing.volces.com）,商业服务条款,Agent 长期记忆与资源写入（会话/消息/commit；资源上传）,按服务条款使用；API Key 仅存本地 .env、不随作品分发、不入仓库,纯标准库客户端适配器、错误降级与任务轮询自研,合规；已实测（写记忆/传资源成功）
+MIT License（本项目自身许可证）,g:\trae\OpenSourceGuard-0.6.0\LICENSE,MIT,授权本项目代码复用、修改与再分发,保留版权与许可声明,项目代码由团队提供,合规；根目录 LICENSE

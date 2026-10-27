@@ -1,0 +1,5 @@
+--- a/parser.py
++++ b/parser.py
+@@
+-    return rows[0] if len(rows) <= 1 else rows
++    return [] if not rows else (rows[0] if len(rows) == 1 else rows)
